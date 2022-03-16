@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        background: url(media/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #searchbar {
+        height: 550px;
+        width: 500px;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.5),
+          rgba(255, 255, 255, 0.5)
+        );
+        border-radius: 10px;
+        position: fixed;
+        bottom: 100px;
+        left: 500px;
+      }
+      #upersearch {
+        height: 130px;
+        width: 500px;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.3),
+          rgba(255, 255, 255, 0.3)
+        );
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+      }
+      #typesearch {
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.1)
+        );
+        margin-top: 30px;
+        height: 35px;
+        width: 450px;
+        font-size: 15px;
+        border: 1px solid white;
+        border-radius: 9px;
+        border-bottom: 2px solid rgb(0, 145, 255);
+      }
+       #badd, #bapp, #bweb, #bfile{
+          padding-left: 45px;
+          padding-right: 45px;
+          margin-top: 20px;
+          font-size: 20px;
+          font-weight: bold;
+          padding-bottom: 11px;
+      }
+      #bapp{
+          border-bottom: 5px solid blue;
+      }
+      #appdiv img{
+          height: 70px;
+          width: 70px;
+          padding: 3px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="searchbar">
+      <div id="upersearch">
+        <i class="fa fa-search" aria-hidden="true" style="position: relative; left: 30px;"></i>
+        <input type="text" id="typesearch" placeholder="&ensp;&ensp;&ensp;&ensp;Search for anything" />
+        <div style="display: flex">
+          <div id="badd">All</div>
+          <div id="bapp">Apps</div>
+          <div id="bweb">Web</div>
+          <div id="bfile">Files</div>
+        </div>
+        <div id="appdiv" >
+            <img src="media/wgit.png">&ensp;&ensp;<h3 style="position: absolute; top: 140px; left: 100px;">Github</h3> <br>
+            <img src="media/wsett.png">&ensp;&ensp;<h3 style="position: absolute; top: 220px; left: 100px;">Setting</h3> <br>
+            <img src="media/wzip.png">&ensp;&ensp;<h3 style="position: absolute; top: 300px; left: 100px;">Zip</h3> <br>
+            <img src="media/wphotoshop.png">&ensp;&ensp;<h3 style="position: absolute; top: 380px; left: 100px;">Photoshop</h3> <br>
+            <img src="media/wmail.png">&ensp;&ensp;<h3 style="position: absolute; top: 460px; left: 100px;">Mail</h3> <br>
+        </div>
+      </div>
+    </div>
+    <script>
+        document.getElementById('badd').addEventListener("click", () => {
+            console.log("click")
+            if(document.getElementById('badd').style.background == "white"){
+                document.getElementById('badd').style.background = "blue";
+            }
+            else if(document.getElementById('badd').style.background == "blue"){
+                document.getElementById('badd').style.background = "white";
+            }
+        })
+    </script>
+  </body>
+</html>

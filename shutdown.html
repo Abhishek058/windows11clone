@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #shutbody{
+            height: 768px;
+            width: 100%;
+        }
+        #shutdown{
+            position: relative;
+            top: 200px;
+        }
+        #shutdown h1{
+            margin-top: -70px;
+        }
+    </style>
+</head>
+<body>
+    <div id="shutbody">
+        <center>
+            <div id="shutdown">
+                <img src="media/loading.gif" width="30%">
+                <h1>Shutting down</h1>
+            </div>
+            </center>
+    </div>
+</body>
+<script>
+    let shutdowndiv = document.getElementById('shutdown');
+    function shutDown(){
+        shutdowndiv.style.display = "none";
+        document.getElementById('shutbody').style.backgroundColor = "black";
+    }
+    setTimeout(shutDown, 5000);
+</script>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <style>
+      .control {
+        width: 400px;
+        height: 530px;
+        border: 2px solid grey;
+        border-radius: 7px;
+      }
+      .content{
+          display: flex;
+      }
+      div .content div{
+        text-align: center;
+        margin: 20px;
+        width: 90px;
+        height: 40px;
+        border: 1px solid grey;
+        border-radius: 7px;
+      }
+      div .content div .fa{
+          margin-top: 12px;
+      }
+      .slid{
+          margin-top: 50px;
+          margin-left: 25px;
+      }
+      .slid2{
+          margin-left: 22px;
+          margin-top: 25px;
+          margin-bottom: 30px;
+      }
+      .footbattery{
+          margin-left: 15px;
+          margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="control">
+      <div class="content">
+        <div class="wifi" id="onbtn">
+            <i class="fa fa-wifi" aria-hidden="true"></i>
+            <h5>Wifi</h5>
+        </div>
+
+        <div class="blue">
+          <i class="fa fa-bluetooth-b" aria-hidden="true"></i>
+          <h5>Bluetooth</h5>
+        </div>
+
+        <div class="air">
+            <i class="fa fa-plane" aria-hidden="true"></i>
+            <h5>Airplane mode</h5>
+        </div>
+
+      </div>
+      
+      <div class="content">
+        <div class="batsav">
+          <i class="fa fa-battery-quarter" aria-hidden="true"></i>
+          <h5>Battery saver</h5>
+        </div>
+
+        <div class="prio">
+            <i class="fa fa-moon-o" aria-hidden="true"></i>
+            <h5>Focus assist</h5>
+        </div>
+
+        <div class="acces">
+            <i class="fa fa-male" aria-hidden="true"></i>
+            <h5>Accessibility</h5>
+        </div>
+
+      </div>
+      <div class="content">
+        <div class="night">
+            <i class="fa fa-sun-o" aria-hidden="true"></i>
+            <h5>Night light</h5>
+        </div>
+
+        <div class="project">
+          <i class="fa fa-desktop" aria-hidden="true"></i>
+          <h5>Project</h5>
+        </div>
+
+        <div class="cast">
+            <i class="fa fa-mobile" aria-hidden="true"></i>
+            <h5>Cast</h5>
+        </div>
+
+      </div>
+      <div class="content">
+        <div class="hotspot">
+            <i class="fa fa-rss" aria-hidden="true"></i>
+            <h5>Hotspot</h5>
+        </div>
+
+        <div class="share">
+          <i class="fa fa-share-square-o" aria-hidden="true"></i>
+          <h5>Nearby sharing</h5>
+        </div>
+
+        <div class="keybo">
+          <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+          <h5>Keyboard layout</h5>
+        </div>
+
+      </div>
+
+
+      <div class="slid">
+        <i class="fa fa-volume-down" aria-hidden="true" style="font-size: 25px;"></i>&ensp;
+        <input type="range" min="0" max="100" style="width: 300px;">
+      </div>
+
+      <div class="slid2">
+        <i class="fa fa-sun-o" aria-hidden="true" style="font-size: 20px;"></i>&ensp;
+        <input type="range" min="0" max="100" style="width: 300px;">
+      </div>
+<hr>
+    <div class="footbattery">
+        <i class="fa fa-battery-three-quarters" aria-hidden="true">&nbsp;89%</i>
+        <i class="fa fa-pencil" aria-hidden="true" style="margin-left: 250px;"></i>
+        <i class="fa fa-cog" aria-hidden="true" style="margin-left: 20px;"></i>
+    </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)), url("media/bg.jpg");
+    background-size: cover;
+}
+#lockAnimate{
+    background-image: url("media/bg.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    transition: 0.1s;
+}
+.login h1{
+    position: relative;
+    top: 120px;
+    color: white;
+}
+.timestamp{
+    color: white;
+    margin-top: 150px;
+}
+.timestamp h1 #time{
+    font-size: 110px;
+}
+.login p{
+    position: relative;
+    top: 10px;
+    color: white;
+    font-size: 13px;
+}
+.user{
+    height: 210px;
+    width: 210px;
+    position: relative;
+    top: 110px;
+    background: linear-gradient(rgba(256,256,256,0.3),rgba(256,256,256,0.3));
+    border-radius: 50%;
+}
+.user img{
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+}
+
+.okbtn{
+    width: 90px;
+    background: linear-gradient(rgba(256,256,256,0.3),rgba(256,256,256,0.3));
+    position: relative;
+    top: 80px;
+    border-radius: 5px;
+    color: white;
+    padding: 3px;
+}
+
+.okbtn:hover{
+    border: 1.5px solid white;
+}
+
+.footer{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+.footer .fa{
+    padding-left: 10px;
+}
+.footer .fa:hover{
+    cursor: pointer;
+}

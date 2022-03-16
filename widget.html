@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        background-image: url(media/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #first_widget,
+      #second_widget,
+      #third_widget {
+        height: 180px;
+        width: 350px;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.6),
+          rgba(255, 255, 255, 0.6)
+        );
+        border-radius: 10px;
+      }
+      #first_widget div {
+        background-color: white;
+        text-align: center;
+        width: 40px;
+        height: 20px;
+        position: relative;
+        top: 10px;
+        left: 295px;
+        border: 1px solid grey;
+        border-radius: 5px;
+      }
+      #first_widget div:hover {
+        cursor: pointer;
+        background-color: lightblue;
+      }
+      #first_widget img {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: -10px;
+      }
+      #first_widget img:hover {
+        cursor: pointer;
+      }
+      #first_widget {
+        text-align: center;
+        position: fixed;
+        top: 50px;
+        right: 50px;
+      }
+      #second_widget {
+        position: fixed;
+        top: 250px;
+        right: 50px;
+      }
+      #third_widget {
+        position: fixed;
+        top: 450px;
+        right: 50px;
+      }
+      #second_widget h1 {
+        margin-left: 10px;
+      }
+      #second_widget h3 {
+        margin-top: -25px;
+        margin-left: 15px;
+      }
+      #second_widget p {
+        margin-top: -20px;
+        margin-left: 20px;
+      }
+      #second_widget h2 {
+        margin-left: 270px;
+        position: relative;
+        top: -80px;
+        font-size: 45px;
+      }
+      /* #third_widget h3{
+          margin-left: 15px;
+          margin-bottom: 40px;
+      } */
+      #third_widget div {
+        margin-left: 20px;
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="first_widget">
+      <div>
+        edit&nbsp;<i class="fa fa-pencil" aria-hidden="true" style="font-size: 10px; color: grey"></i>
+      </div>
+      <h1>Applications</h1>
+      <img src="media/wmail.png" width="20%" />
+      <img src="media/wsett.png" width="20%" />
+      <img src="media/wsteam.png" width="20%" />
+    </div>
+    <div id="second_widget">
+      <h1>Chandigarh, India</h1>
+      <h3>Rain</h3>
+      <img
+        src="media/wrain.png"
+        style="margin-top: -35px; margin-left: 121px"
+      />
+      <p>Weather</p>
+      <h2>54&deg;</h2>
+    </div>
+    <div id="third_widget">
+      <div>
+        <h3>CPU</h3>
+        &ensp;&ensp;<input type="range" style="width: 200px" />&ensp;&ensp;
+        <p>50%</p>
+      </div>
+      <div>
+        <h3>RAM</h3>
+        &nbsp;&ensp;<input type="range" style="width: 200px" />&ensp;&ensp;
+        <p>50%</p>
+      </div>
+      <div>
+        <h3>GPU</h3>
+        &ensp;&ensp;<input type="range" style="width: 200px" />&ensp;&ensp;
+        <p>50%</p>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.getElementById("wifibtn").addEventListener("click", () => {
+      if (document.getElementById("control").style.right == "10px") {
+        document.getElementById("control").style.right = "-550px";
+      } else {
+        document.getElementById("control").style.right = "10px";
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #refresh{
+            width: 300px;
+            height: 300px;
+            border: 2px solid grey;
+            border-radius: 7px; 
+            background-color:white;
+            position: fixed;
+            bottom: -400px;
+            left: 450px;
+        }
+        #refresh img{
+            position: relative;
+            top: 4px;
+            border-radius: 50%;
+            margin-left: 5px;
+            margin-right: 8px;
+        }
+        #refresh div{
+            width: 96%;
+            margin-left: 5px;
+            border-radius: 7px;
+        }
+        #refresh div:hover{
+            background-color: rgb(0, 145, 255);
+        }
+    </style>
+</head>
+<body>
+    <div id="refresh">
+        <div class="view"><img src="media/view.png">View<i class="fa fa-angle-right" aria-hidden="true" style="position: relative; left: 210px;"></i></div>
+        <div class="sort"><img src="media/sort.png">Sort<i class="fa fa-angle-right" aria-hidden="true" style="position: relative; left: 210px;"></i></div>
+        <div class="refr"><img src="media/rfrsh.png">Refresh</div><hr>
+        <div class="new"><img src="media/newic.png">New<i class="fa fa-angle-right" aria-hidden="true" style="position: relative; left: 210px;"></i></div><hr>
+        <div class="display"><img src="media/displayico.png">Display setting</div>
+        <div class="personalize"><img src="media/brushico.png">Personalize</div><hr>
+        <div class="terminal"><img src="media/termico.png">Open in windows terminal</div><hr>
+        <div class="option"><img src="media/optico.png">Show more option</div>
+    </div>
+</body>
+<script>
+    document.addEventListener("contextmenu", () => {
+        if(document.getElementById('refresh').style.bottom == "-400px"){
+            document.getElementById('refresh').style.bottom = "300px";
+        }
+        else{
+            document.getElementById('refresh').style.bottom = "-400px";
+        }
+    });
+</script>
+</html>
